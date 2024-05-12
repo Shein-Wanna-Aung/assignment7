@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    button{
+            border-radius:50px;
+            background-color: darkgoldenrod;
+            padding: 20px 40px;
+            border: 2px solid blueviolet;
+        }
+        button:hover{
+            animation-timing-function: linear;
+            animation-iteration-count:infinite;
+            transition: 1s;
+            animation-duration: 3s;
+            background-color: blue;
+            animation-name: move;
+        }
+        div{
+            margin:20px;
+            text-align: center;
+        }
+        @keyframes move{
+            0%{
+                transform: translatex(0px) rotate(0deg);background-color: red;
+        }
+        50%{
+                transform: translatex(400px) rotate(0deg);background-color: greenyellow;
+
+        }
+        100%{
+                transform: translatex(-400px) rotate(900deg);background-color: aqua;
+        }
+    }
+
+
+    </style>
+</head>
+<body>
+    <h1>animation</h1>
+   <div><button>click me</button></div>
+</body>
+</html>
